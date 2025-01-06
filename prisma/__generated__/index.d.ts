@@ -1103,7 +1103,7 @@ export namespace Prisma {
     updatedAt: Date | null
     email: string | null
     password: string | null
-    displayName: string | null
+    name: string | null
     avatar: string | null
     role: $Enums.UserRoles | null
     isVerified: boolean | null
@@ -1117,7 +1117,7 @@ export namespace Prisma {
     updatedAt: Date | null
     email: string | null
     password: string | null
-    displayName: string | null
+    name: string | null
     avatar: string | null
     role: $Enums.UserRoles | null
     isVerified: boolean | null
@@ -1131,7 +1131,7 @@ export namespace Prisma {
     updatedAt: number
     email: number
     password: number
-    displayName: number
+    name: number
     avatar: number
     role: number
     isVerified: number
@@ -1147,7 +1147,7 @@ export namespace Prisma {
     updatedAt?: true
     email?: true
     password?: true
-    displayName?: true
+    name?: true
     avatar?: true
     role?: true
     isVerified?: true
@@ -1161,7 +1161,7 @@ export namespace Prisma {
     updatedAt?: true
     email?: true
     password?: true
-    displayName?: true
+    name?: true
     avatar?: true
     role?: true
     isVerified?: true
@@ -1175,7 +1175,7 @@ export namespace Prisma {
     updatedAt?: true
     email?: true
     password?: true
-    displayName?: true
+    name?: true
     avatar?: true
     role?: true
     isVerified?: true
@@ -1262,7 +1262,7 @@ export namespace Prisma {
     updatedAt: Date
     email: string
     password: string
-    displayName: string
+    name: string
     avatar: string | null
     role: $Enums.UserRoles
     isVerified: boolean
@@ -1293,7 +1293,7 @@ export namespace Prisma {
     updatedAt?: boolean
     email?: boolean
     password?: boolean
-    displayName?: boolean
+    name?: boolean
     avatar?: boolean
     role?: boolean
     isVerified?: boolean
@@ -1309,7 +1309,7 @@ export namespace Prisma {
     updatedAt?: boolean
     email?: boolean
     password?: boolean
-    displayName?: boolean
+    name?: boolean
     avatar?: boolean
     role?: boolean
     isVerified?: boolean
@@ -1323,7 +1323,7 @@ export namespace Prisma {
     updatedAt?: boolean
     email?: boolean
     password?: boolean
-    displayName?: boolean
+    name?: boolean
     avatar?: boolean
     role?: boolean
     isVerified?: boolean
@@ -1348,7 +1348,7 @@ export namespace Prisma {
       updatedAt: Date
       email: string
       password: string
-      displayName: string
+      name: string
       avatar: string | null
       role: $Enums.UserRoles
       isVerified: boolean
@@ -1753,7 +1753,7 @@ export namespace Prisma {
     readonly updatedAt: FieldRef<"User", 'DateTime'>
     readonly email: FieldRef<"User", 'String'>
     readonly password: FieldRef<"User", 'String'>
-    readonly displayName: FieldRef<"User", 'String'>
+    readonly name: FieldRef<"User", 'String'>
     readonly avatar: FieldRef<"User", 'String'>
     readonly role: FieldRef<"User", 'UserRoles'>
     readonly isVerified: FieldRef<"User", 'Boolean'>
@@ -4059,7 +4059,7 @@ export namespace Prisma {
     updatedAt: 'updatedAt',
     email: 'email',
     password: 'password',
-    displayName: 'displayName',
+    name: 'name',
     avatar: 'avatar',
     role: 'role',
     isVerified: 'isVerified',
@@ -4244,7 +4244,7 @@ export namespace Prisma {
     updatedAt?: DateTimeFilter<"User"> | Date | string
     email?: StringFilter<"User"> | string
     password?: StringFilter<"User"> | string
-    displayName?: StringFilter<"User"> | string
+    name?: StringFilter<"User"> | string
     avatar?: StringNullableFilter<"User"> | string | null
     role?: EnumUserRolesFilter<"User"> | $Enums.UserRoles
     isVerified?: BoolFilter<"User"> | boolean
@@ -4259,7 +4259,7 @@ export namespace Prisma {
     updatedAt?: SortOrder
     email?: SortOrder
     password?: SortOrder
-    displayName?: SortOrder
+    name?: SortOrder
     avatar?: SortOrderInput | SortOrder
     role?: SortOrder
     isVerified?: SortOrder
@@ -4277,7 +4277,7 @@ export namespace Prisma {
     createdAt?: DateTimeFilter<"User"> | Date | string
     updatedAt?: DateTimeFilter<"User"> | Date | string
     password?: StringFilter<"User"> | string
-    displayName?: StringFilter<"User"> | string
+    name?: StringFilter<"User"> | string
     avatar?: StringNullableFilter<"User"> | string | null
     role?: EnumUserRolesFilter<"User"> | $Enums.UserRoles
     isVerified?: BoolFilter<"User"> | boolean
@@ -4292,7 +4292,7 @@ export namespace Prisma {
     updatedAt?: SortOrder
     email?: SortOrder
     password?: SortOrder
-    displayName?: SortOrder
+    name?: SortOrder
     avatar?: SortOrderInput | SortOrder
     role?: SortOrder
     isVerified?: SortOrder
@@ -4312,7 +4312,7 @@ export namespace Prisma {
     updatedAt?: DateTimeWithAggregatesFilter<"User"> | Date | string
     email?: StringWithAggregatesFilter<"User"> | string
     password?: StringWithAggregatesFilter<"User"> | string
-    displayName?: StringWithAggregatesFilter<"User"> | string
+    name?: StringWithAggregatesFilter<"User"> | string
     avatar?: StringNullableWithAggregatesFilter<"User"> | string | null
     role?: EnumUserRolesWithAggregatesFilter<"User"> | $Enums.UserRoles
     isVerified?: BoolWithAggregatesFilter<"User"> | boolean
@@ -4465,7 +4465,7 @@ export namespace Prisma {
     updatedAt?: Date | string
     email: string
     password: string
-    displayName: string
+    name: string
     avatar?: string | null
     role?: $Enums.UserRoles
     isVerified?: boolean
@@ -4480,7 +4480,7 @@ export namespace Prisma {
     updatedAt?: Date | string
     email: string
     password: string
-    displayName: string
+    name: string
     avatar?: string | null
     role?: $Enums.UserRoles
     isVerified?: boolean
@@ -4495,7 +4495,7 @@ export namespace Prisma {
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     email?: StringFieldUpdateOperationsInput | string
     password?: StringFieldUpdateOperationsInput | string
-    displayName?: StringFieldUpdateOperationsInput | string
+    name?: StringFieldUpdateOperationsInput | string
     avatar?: NullableStringFieldUpdateOperationsInput | string | null
     role?: EnumUserRolesFieldUpdateOperationsInput | $Enums.UserRoles
     isVerified?: BoolFieldUpdateOperationsInput | boolean
@@ -4510,7 +4510,7 @@ export namespace Prisma {
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     email?: StringFieldUpdateOperationsInput | string
     password?: StringFieldUpdateOperationsInput | string
-    displayName?: StringFieldUpdateOperationsInput | string
+    name?: StringFieldUpdateOperationsInput | string
     avatar?: NullableStringFieldUpdateOperationsInput | string | null
     role?: EnumUserRolesFieldUpdateOperationsInput | $Enums.UserRoles
     isVerified?: BoolFieldUpdateOperationsInput | boolean
@@ -4525,7 +4525,7 @@ export namespace Prisma {
     updatedAt?: Date | string
     email: string
     password: string
-    displayName: string
+    name: string
     avatar?: string | null
     role?: $Enums.UserRoles
     isVerified?: boolean
@@ -4539,7 +4539,7 @@ export namespace Prisma {
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     email?: StringFieldUpdateOperationsInput | string
     password?: StringFieldUpdateOperationsInput | string
-    displayName?: StringFieldUpdateOperationsInput | string
+    name?: StringFieldUpdateOperationsInput | string
     avatar?: NullableStringFieldUpdateOperationsInput | string | null
     role?: EnumUserRolesFieldUpdateOperationsInput | $Enums.UserRoles
     isVerified?: BoolFieldUpdateOperationsInput | boolean
@@ -4553,7 +4553,7 @@ export namespace Prisma {
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     email?: StringFieldUpdateOperationsInput | string
     password?: StringFieldUpdateOperationsInput | string
-    displayName?: StringFieldUpdateOperationsInput | string
+    name?: StringFieldUpdateOperationsInput | string
     avatar?: NullableStringFieldUpdateOperationsInput | string | null
     role?: EnumUserRolesFieldUpdateOperationsInput | $Enums.UserRoles
     isVerified?: BoolFieldUpdateOperationsInput | boolean
@@ -4795,7 +4795,7 @@ export namespace Prisma {
     updatedAt?: SortOrder
     email?: SortOrder
     password?: SortOrder
-    displayName?: SortOrder
+    name?: SortOrder
     avatar?: SortOrder
     role?: SortOrder
     isVerified?: SortOrder
@@ -4809,7 +4809,7 @@ export namespace Prisma {
     updatedAt?: SortOrder
     email?: SortOrder
     password?: SortOrder
-    displayName?: SortOrder
+    name?: SortOrder
     avatar?: SortOrder
     role?: SortOrder
     isVerified?: SortOrder
@@ -4823,7 +4823,7 @@ export namespace Prisma {
     updatedAt?: SortOrder
     email?: SortOrder
     password?: SortOrder
-    displayName?: SortOrder
+    name?: SortOrder
     avatar?: SortOrder
     role?: SortOrder
     isVerified?: SortOrder
@@ -5395,7 +5395,7 @@ export namespace Prisma {
     updatedAt?: Date | string
     email: string
     password: string
-    displayName: string
+    name: string
     avatar?: string | null
     role?: $Enums.UserRoles
     isVerified?: boolean
@@ -5409,7 +5409,7 @@ export namespace Prisma {
     updatedAt?: Date | string
     email: string
     password: string
-    displayName: string
+    name: string
     avatar?: string | null
     role?: $Enums.UserRoles
     isVerified?: boolean
@@ -5439,7 +5439,7 @@ export namespace Prisma {
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     email?: StringFieldUpdateOperationsInput | string
     password?: StringFieldUpdateOperationsInput | string
-    displayName?: StringFieldUpdateOperationsInput | string
+    name?: StringFieldUpdateOperationsInput | string
     avatar?: NullableStringFieldUpdateOperationsInput | string | null
     role?: EnumUserRolesFieldUpdateOperationsInput | $Enums.UserRoles
     isVerified?: BoolFieldUpdateOperationsInput | boolean
@@ -5453,7 +5453,7 @@ export namespace Prisma {
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     email?: StringFieldUpdateOperationsInput | string
     password?: StringFieldUpdateOperationsInput | string
-    displayName?: StringFieldUpdateOperationsInput | string
+    name?: StringFieldUpdateOperationsInput | string
     avatar?: NullableStringFieldUpdateOperationsInput | string | null
     role?: EnumUserRolesFieldUpdateOperationsInput | $Enums.UserRoles
     isVerified?: BoolFieldUpdateOperationsInput | boolean

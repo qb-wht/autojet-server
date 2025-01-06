@@ -5,7 +5,7 @@ import { IsPasswordsMatchingConstraint } from '@/libs/common/decorators/is-passw
 export class RegisterDto {
   @IsString({ message: 'Имя должно быть строкой.' })
   @IsNotEmpty({ message: 'Имя обязательно для заполнения.' })
-  displayName: string;
+  name: string;
 
   @IsString({ message: 'Email должен быть строкой.' })
   @IsEmail({}, { message: 'Некорректный формат email.' })

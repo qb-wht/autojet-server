@@ -6,7 +6,7 @@ import { hash } from 'argon2';
 type CreateUserParams = {
   email: string;
   password: string;
-  displayName: string;
+  name: string;
   avatar: string;
   method: AuthMethod;
   isVerified: boolean;
@@ -47,13 +47,13 @@ export class UserService {
   }
 
   public async create(params: CreateUserParams) {
-    const { email, password, displayName, avatar, method, isVerified } = params;
+    const { email, password, name, avatar, method, isVerified } = params;
 
     const user = await this.prismaService.user.create({
       data: {
         email,
         password: password ? await hash(password) : '',
-        displayName,
+        name,
         avatar,
         method,
         isVerified,
