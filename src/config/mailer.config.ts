@@ -14,6 +14,6 @@ export const getMailerConfig = async (configService: ConfigService): Promise<Mai
     },
   },
   defaults: {
-    from: `"TeaCoder Team" ${configService.getOrThrow<string>('MAIL_LOGIN')}`,
+    from: `${configService.getOrThrow<string>('MAIL_FROM_NAME')} <onboarding@resend.dev>`,
   },
 });
